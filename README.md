@@ -78,3 +78,4 @@ npm install axios@0.27.2
 npm install react-dom@18.2.0
 npm install react-player@2.10.1 
 npm install react-router-dom@6.3.0 
+npm install --legacy-peer-deps
