@@ -5,22 +5,25 @@ import { Link } from "react-router-dom";
 import { logo } from "../utils/constants";
 import SearchBar from "./SearchBar";
 
+import styled from "styled-components";
+
+const StyledStack = styled(Stack)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px;
+  position: sticky;
+  background: #000;
+  top: 0;
+  justify-content: space-between;
+`;
+
 const Navbar = () => (
-  <Stack
-    direction="row"
-    alignItems="center"
-    p={2}
-    sx={{
-      position: "sticky",
-      background: "#000",
-      top: 0,
-      justifyContent: "space-between",
-    }}
-  >
+  <StyledStack>
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
     </Link>
     <SearchBar />
-  </Stack>
+  </StyledStack>
 );
 export default Navbar;
