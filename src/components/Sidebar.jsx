@@ -30,6 +30,7 @@ const sidebar = () => (
         >
           {category.icon}
         </span>
+
         <span
           style={{
             opacity: category.name === selectedCategory ? "1" : "0.5",
