@@ -3,7 +3,6 @@ import axios from "axios";
 const Base_URL = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
-  method: "GET",
   url: Base_URL,
   params: {
     maxResults: "50",
